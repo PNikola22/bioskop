@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bioskop</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: black"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="img/logo.png" alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="repertoar.html">Repertoar</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Blog
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="blog1.html">Loši momci</a>
+              <a class="dropdown-item" href="blog2.html">Tornado 2</a>
+              <a class="dropdown-item" href="blog3.html">Građanski rat</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero-image">
+      <a href="repertoar.html" class="hero-button">Repertoar</a>
+    </div>
+    <div class="container">
+      <h1 class="section-title">Filmovi u 2024.</h1>
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img
+              class="card-img-top filmovi"
+              src="img/film1.png"
+              alt="Film 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Loši momci: Sve ili ništa</h5>
+              <a href="blog1.html" class="btn-more">Više</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img
+              class="card-img-top filmovi"
+              src="img/film2.jpg"
+              alt="Film 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Tornado 2</h5>
+              <a href="blog2.html" class="btn-more">Više</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img
+              class="card-img-top filmovi"
+              src="img/film3.jpg"
+              alt="Film 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Građanski rat</h5>
+              <a href="blog3.html" class="btn-more">Više</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="section-title">Preporuke u junu:</h2>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div
+            id="recommendationCarousel"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="img/slide1.jpg"
+                  alt="Preporuka 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="img/slide2.webp"
+                  alt="Preporuka 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="img/slide3.webp"
+                  alt="Preporuka 3"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#recommendationCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Prethodno</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#recommendationCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Sledeće</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <footer>
+      <div class="container">
+        <p>&copy; Nikola Pećanac | 2024</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

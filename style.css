@@ -1,0 +1,150 @@
+.navbar-nav {
+  margin-right: 20px;
+}
+
+.hero-image {
+  background-image: url('img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 270px;
+  border-radius: 5%;
+}
+
+.section-title {
+  font-family: 'Arial', sans-serif;
+  color: black;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.card {
+  border: 2px solid blue;
+  border-radius: 5%;
+}
+.card-title {
+  font-family: 'Arial', sans-serif;
+  padding-bottom: 10px;
+}
+.btn-more {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.filmovi {
+  border-radius: 5% 5% 0% 0%;
+  height: 400px;
+}
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.gallery img {
+  cursor: pointer;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-navigation button {
+  background-color: rgba(126, 124, 124, 0.5);
+  opacity: 0.7;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.repertoar {
+  height: 400px;
+}
+#modalImage {
+  height: 600px;
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 2em;
+  padding: 15px;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.blog {
+  height: 500px;
+  width: 100%;
+}
+.contact-section {
+  margin-top: 20px;
+}
+.contact-form {
+  background-color: #343a40;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+.form-control {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+}
+.form-control::placeholder {
+  color: #ced4da;
+}
+@media (max-width: 575px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}

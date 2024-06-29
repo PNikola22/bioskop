@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bioskop</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: black"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="img/logo.png" alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="repertoar.html">Repertoar</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Blog
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="blog1.html">Loši momci</a>
+              <a class="dropdown-item" href="blog2.html">Tornado 2</a>
+              <a class="dropdown-item" href="blog3.html">Građanski rat</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="text-center my-4">Kontakt</h1>
+      <div class="row contact-section">
+        <div class="col-md-4">
+          <h5>Bioskopi u Novom Sadu:</h5>
+          <p>
+            Bioskop Arena Cineplex<br /><i>Adresa: Bulevar Mihajla Pupina 3 </i>
+          </p>
+          <p>
+            Cineplexx Promenada<br /><i>Adresa: Bulevar oslobođenja 119 </i>
+          </p>
+          <p>
+            Cinestar 4DX <br />
+            <i>Adresa: Sentandrejski put 11 </i>
+          </p>
+          <p>Za sva dodatna pitanja stojimo Vam na raspolaganju!</p>
+        </div>
+        <div class="col-md-8">
+          <div class="contact-form">
+            <div class="form-group">
+              <label for="name">Ime i prezime</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" class="form-control" id="phone" />
+            </div>
+            <div class="form-group">
+              <label for="message">Poruka</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button id="saveBtn" class="btn btn-primary">Pošalji</button>
+            <button id="showBtn" class="btn btn-secondary">Prikaži</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <footer>
+      <div class="container">
+        <p>&copy; Nikola Pećanac | 2024</p>
+      </div>
+    </footer>
+    <script src="localstorage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="wraptext.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bioskop</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: black"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="img/logo.png" alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="repertoar.html">Repertoar</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Blog
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="blog1.html">Loši momci</a>
+              <a class="dropdown-item" href="blog2.html">Tornado 2</a>
+              <a class="dropdown-item" href="blog3.html">Građanski rat</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">
+          REPERTOAR BIOSKOPA | 2024
+        </h1>
+        <div class="row gallery">
+          <!-- Red 1 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f1.jpg"
+              class="img-fluid repertoar"
+              alt="film 1"
+            />
+            <p class="text-center mt-2">
+             <h4> Tiho mesto - Dan prvi </h4>
+             27.06.2024.
+
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f2.jpg"
+              class="img-fluid repertoar"
+              alt="film2"
+            />
+            <p class="text-center mt-2">
+              <h4> 
+                Džoker: Ludilo u dvoje</h4>
+                03.10.2024.
+             </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f3.jpg"
+              class="img-fluid repertoar"
+              alt="film 3"
+            />
+            <p class="text-center mt-2">
+              <h4> Bitlđus Bitlđus</h4>
+              05.09.2024.
+             </p>
+          </div>
+          <!-- Red 2 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f4.jpg"
+              class="img-fluid repertoar"
+              alt="film 4"
+            />
+            <p class="text-center mt-2">
+              <h4> 
+                Dedpul i Vulverin</h4>
+                25.07.2024.
+             </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f5.jpg"
+              class="img-fluid repertoar"
+              alt="film 5"
+            />
+            <p class="text-center mt-2">
+              <h4> Tornado 2</h4>
+              18.07.2024.
+             </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f6.jpg"
+              class="img-fluid repertoar"
+              alt="film 6"
+            />
+            <p class="text-center mt-2">
+              <h4> Horizont: Američka saga</h4>
+              27.06.2024.
+             </p>
+          </div>
+          <!-- Red 3 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f7.jpg"
+              class="img-fluid repertoar"
+              alt="film 7"
+            />
+            <p class="text-center mt-2">
+              <h4> 
+                Grozan ja 4</h4>
+                27.06.2024.
+             </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f8.jpg"
+              class="img-fluid repertoar"
+              alt="film 8"
+            />
+            <p class="text-center mt-2">
+              <h4> U mojoj glavi 2</h4>
+              13.06.2024.
+             </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="img/f9.jpg"
+              class="img-fluid repertoar"
+              alt="film 9"
+            />
+            <p class="text-center mt-2">
+              <h4> 
+                Back to Black</h4>
+                09.05.2024.
+             </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="imageModal"
+        tabindex="-1"
+        aria-labelledby="imageModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img id="modalImage" class="modal-img" src="" alt="" />
+              <div class="modal-navigation">
+                <button id="prevButton">&lt;</button>
+                <button id="nextButton">&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="container">
+        <p>&copy; Nikola Pećanac | 2024</p>
+      </div>
+    </footer>
+    <script src="repertoar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
